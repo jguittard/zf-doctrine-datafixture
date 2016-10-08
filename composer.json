@@ -1,0 +1,44 @@
+{
+  "name": "jguittard/zf-doctrine-datafixture",
+  "description": "Doctrine Data Fixture Console Route",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "doctrine",
+    "data-fixture",
+    "module",
+    "zf"
+  ],
+  "homepage": "http://www.doctrine-project.org/",
+  "authors": [
+    {
+      "name": "Julien Guittard",
+      "email": "julien.guittard@me.com"
+    }
+  ],
+  "require": {
+    "php": "~5.6 || ^7.0",
+    "zendframework/zend-modulemanager": "^2.6",
+    "zendframework/zend-servicemanager": "^2.3",
+    "doctrine/data-fixtures": "~1.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "^5.4",
+    "squizlabs/php_codesniffer": "*",
+    "doctrine/doctrine-orm-module": "^0.10.0",
+    "zendframework/zendframework": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZF\\Doctrine\\DataFixture\\": "src/"
+    },
+    "classmap": [
+      "Module.php"
+    ]
+  },
+  "extra": {
+    "zf": {
+      "component": "ZF\\Doctrine\\DataFixture"
+    }
+  }
+}
